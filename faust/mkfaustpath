@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function here() {
+    (
+    cd "$(dirname $0)"
+    echo "${PWD}"
+    )
+}
+
+echo "export FAUSTARCH='$(here)'" > faustpath
